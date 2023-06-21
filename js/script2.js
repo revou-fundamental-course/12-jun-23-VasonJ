@@ -1,11 +1,4 @@
-const input = document.getElementById("input");
-const numberinput = /^[0-9]+$/;
 
-input.addEventListener('keypress',function(event){
-    if(!numberinput.test(event.key)){
-        event.preventDefault()
-    }
-    
     function Konversi(){
     let suhu = document.getElementById("input").value; //Mengambil nilai inputan
     if(suhu != ""){//Kalau Hasilnya true
