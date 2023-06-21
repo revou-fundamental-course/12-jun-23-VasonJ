@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Ini bagian header -->
+        <div class="header-container">
+            <h1 class="judul">Temperature Conversion</h1>
+        </div>
+    <!-- Ini bagian content -->
+    <h3 id="info">Masukkan Suhu dalam Celsius (°C)</h3>
+    <form id="form-input">
+        <div class="input-container">
+            <label id="label-input" for="input">Celsius (°C) :</label>
+            <input id="input" placeholder="Masukkan Suhu Dalam Celsius" type="number" >
+        </div>
+    </form>
+
+    <div class="button-container">
+        <button id="button" onclick="Konversi()">Konversi</button>
+        <button id="button" onclick="Hapus()">Reset</button>
+        <button id="button"><a href="index2.html" id="FtoC">Reverse</a></button>
+    </div>
+
+    <div class="output-container">
+        <label id="label-output" for="hasil-output">Fahrenheit (°F) :</label>
+        <output id="hasil-output" type="number">
+    </div>
+
+    <a href="index2.html" id="link">Fahrenheit ke Celsius</a>
+
+    <div class="explanation">
+        <h2 id="judul-explanation"><strong>Cara Konversi dari Celsius (°C) ke Fahrenheit (°F)</strong></h2>
+    <hr id="hr">
+        Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celsius (°C)
+        dikali dengan <sup>9</sup>/<sub>5</sub> tambah 32
+        <br><br>
+        <i>S</i><sub>(°F)</sub> = (<i>S</i><sub>(°C)</sub> x <sup>9</sup>/<sub>5</sub>) + 32
+    </div>
+    <!-- Ini bagian footer -->
+    <div class="thank-you">
+        <p>RevoU Mini Project</p>
+        <p>Made by Jason</p>
+    </div>
+</body>
+<script src="./js/script1.js"></script>
+</html>
