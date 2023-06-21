@@ -6,13 +6,14 @@ input.addEventListener('keypress',function(event){
         event.preventDefault()
     }
     
-function Konversi(){
+ function Konversi(){
     let suhu = document.getElementById("input").value; //Mengambil nilai inputan
-    if(suhu != ""){
-        var hasil = document.getElementById("hasil-output").innerHTML = suhu * 9/5 + 32; //Memproses inputan dan menampilkannya output menggunakan inner.HTML
-    } else{
-        alert("Masukkan Nilai Yang Valid Pada Kolom Celcius");
-    }
+    if(suhu != ""){//Kalau Hasilnya true
+        var hasil=document.getElementById("hasil-output").innerHTML = (suhu*9/5)+32; //Memproses inputan dan menampilkannya output menggunakan inner.HTML
+    }else{//Kalau Hasilnya False
+        alert("Masukkan Nilai Yang Valid Pada Kolom Fahrenheit")
+    }//Untuk buat peringatan supaya masukkan nilai suhu
+    
 }
 
 
