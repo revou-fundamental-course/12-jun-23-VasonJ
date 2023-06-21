@@ -7,7 +7,7 @@ input.addEventListener('keypress',function(event){
     }
     
 function Konversi(){
-    var suhu = document.getElementById("input").value; //Mengambil nilai inputan
+    let suhu = document.getElementById("input").value; //Mengambil nilai inputan
     if(suhu != ""){
         var hasil = document.getElementById("hasil-output").innerHTML = suhu * 9/5 + 32; //Memproses inputan dan menampilkannya output menggunakan inner.HTML
     } else{
